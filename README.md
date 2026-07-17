@@ -1,64 +1,261 @@
-Strategic Customer Churn Analysis
-📌 Project Overview
-This data analytics project identifies why users leave a platform (churn) and provides actionable retention strategies
-. It uses a customer_churn.db SQLite database containing Customer, Subscription, and Support tables
-🛠️ Tech Stack
-Languages: Python, SQL
-Libraries: Pandas, NumPy, Matplotlib, Seaborn, SQLite3
-Environment: Jupyter Notebook
-🚀 Project Workflow
-Data Import: Connected SQLite3 to Python to read data directly using SQL queries
-.
-Data Cleaning: Fixed data types, renamed columns, dropped empty variables, and resolved missing values (e.g., mapping states to countries)
-.
-Feature Engineering: Created calculated columns like a binary churn_flag and segmented users into low, medium, and high churn_risk tiers
-.
-Exploratory Data Analysis (EDA): Leveraged groupby, aggregations, and pivot tables to track KPIs like churn rate and Average Revenue Per User (ARPU)
-.
-Data Visualization: Built telling charts, including Monthly Churn Trends, Seaborn correlation heatmaps, and pair plots
-.
-📊 Key Business Insights
-Overall Churn Rate: ~28.57% of analyzed users have left the platform
-.
-Plan Type Impact: The Basic plan experiences the highest churn at 60%, whereas Premium only sees 14%
-.
-Customer Support Pipeline: There is a high correlation (~76-77%) between users who escalate support issues and those who eventually churn
+# 📊 Strategic Customer Churn Analysis
 
-💡 Actionable Next Steps
-Revamp Customer Support: Implement better resolution frameworks to solve complaints before they reach the escalation stage, as escalated tickets heavily drive churn
-.
-Evaluate the Basic Plan: Investigate pricing, recent changes, or competitor advantages causing massive departures in the Basic tier
-.
-Targeted Retention: Collaborate with Growth/Marketing teams to prioritize retaining Premium users categorized as "High Risk," as they provide the most lifetime value
-.
+A data analytics project that analyzes customer churn patterns and provides actionable business recommendations to improve customer retention. The project uses **Python**, **SQL**, and **SQLite** to transform raw customer data into meaningful insights through data analysis, visualization, and feature engineering.
+
+---
+
+## 📌 Project Overview
+
+Customer churn directly impacts business growth and profitability. This project identifies the key reasons why customers leave a platform and provides strategic recommendations to reduce churn and improve customer retention.
+
+The analysis is performed on a **SQLite database (`customer_churn.db`)** containing customer information, subscription details, and customer support records.
+
+---
+
+## 🎯 Objectives
+
+- Analyze customer churn behavior.
+- Identify high-risk customers.
+- Measure business KPIs such as churn rate and ARPU.
+- Discover factors influencing customer retention.
+- Provide actionable recommendations for business teams.
+
+---
+
+## ✨ Features
+
+- 📂 SQL-based data extraction from SQLite database
+- 🧹 Data cleaning and preprocessing
+- 🔧 Feature engineering
+- 📊 Exploratory Data Analysis (EDA)
+- 📈 Customer churn trend analysis
+- 📉 Revenue and subscription analysis
+- 🎨 Interactive data visualizations
+- 📋 Business KPI reporting
+- 💡 Actionable business recommendations
+
+---
+
 ## 🛠️ Tech Stack
 
+### Languages
 - Python
-- SQL (MySQL)
+- SQL
+
+### Database
+- SQLite3
+
+### Libraries
 - Pandas
 - NumPy
 - Matplotlib
 - Seaborn
-- Scikit-learn
+- SQLite3
+
+### Development Environment
 - Jupyter Notebook
 
 ---
 
+## 📂 Project Structure
+
+```
+Strategic-Customer-Churn-Analysis/
+│
+├── data/
+│   └── customer_churn.db
+│
+├── notebooks/
+│   └── Customer_Churn_Analysis.ipynb
+│
+├── sql/
+│   └── queries.sql
+│
+├── images/
+│
+├── README.md
+├── requirements.txt
+└── LICENSE
+```
+
+---
+
+## 🚀 Project Workflow
+
+### 1. Data Import
+
+- Connected the SQLite database using Python.
+- Extracted customer information using SQL queries.
+- Loaded data into Pandas DataFrames for analysis.
+
+---
+
+### 2. Data Cleaning
+
+- Corrected data types.
+- Renamed columns for consistency.
+- Removed unnecessary variables.
+- Handled missing values.
+- Standardized location data by mapping states to countries.
+
+---
+
+### 3. Feature Engineering
+
+Created new business features including:
+
+- Churn Flag
+- Customer Risk Score
+- Low Risk Customers
+- Medium Risk Customers
+- High Risk Customers
+
+---
+
+### 4. Exploratory Data Analysis (EDA)
+
+Performed analysis using:
+
+- GroupBy operations
+- Aggregations
+- Pivot Tables
+- Descriptive Statistics
+- Revenue Analysis
+- Customer Segmentation
+
+Key Performance Indicators (KPIs):
+
+- Customer Churn Rate
+- Average Revenue Per User (ARPU)
+- Customer Distribution
+- Subscription Performance
+
+---
+
+### 5. Data Visualization
+
+Created visualizations including:
+
+- Monthly Churn Trend
+- Churn Distribution
+- Subscription Plan Comparison
+- Correlation Heatmap
+- Pair Plot
+- Revenue Analysis Charts
+
+---
+
+## 📊 Key Business Insights
+
+### 📉 Overall Churn Rate
+
+Approximately **28.57%** of customers have churned from the platform.
+
+### 💳 Subscription Plan Analysis
+
+- **Basic Plan:** 60% churn rate
+- **Premium Plan:** 14% churn rate
+
+This indicates that customers on the Basic Plan are significantly more likely to leave than Premium subscribers.
+
+### 🎧 Customer Support Analysis
+
+A strong positive correlation (**76–77%**) exists between escalated customer support issues and customer churn, highlighting customer support quality as a major retention factor.
+
+---
+
+## 💡 Business Recommendations
+
+### ✅ Improve Customer Support
+
+- Reduce support escalation rates.
+- Improve first-contact resolution.
+- Monitor unresolved complaints.
+
+---
+
+### ✅ Optimize the Basic Plan
+
+- Review pricing strategy.
+- Compare features with competitors.
+- Improve value offered to Basic users.
+
+---
+
+### ✅ Target High-Risk Customers
+
+- Identify Premium customers with high churn risk.
+- Launch personalized retention campaigns.
+- Offer loyalty rewards and exclusive promotions.
+
+---
+
+## 📈 Business Impact
+
+This project helps organizations to:
+
+- Reduce customer churn
+- Improve customer satisfaction
+- Increase customer lifetime value (CLV)
+- Optimize subscription plans
+- Support data-driven decision making
+
+---
+
+## 🚀 Future Improvements
+
+- Deploy an interactive Streamlit dashboard
+- Build a real-time churn prediction model
+- Integrate Power BI dashboards
+- Automate monthly churn reporting
+- Develop customer retention recommendation system
+
+---
+
+## ▶️ Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/sarthak-hybrid/Strategic-Customer-Churn-Analysis.git
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Launch Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to fork the repository, create a new branch, and submit a pull request.
+Contributions are welcome!
+
+Feel free to fork this repository, create a feature branch, and submit a pull request.
 
 ---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
 ## 👨‍💻 Author
 
 **Sarthak Kandu**
 
-Aspiring Data Analyst | Python | SQL
+Aspiring Data Analyst | Python | SQL | Data Visualization
 
 GitHub: https://github.com/sarthak-hybrid
 
 ---
 
-### ⭐ Support
-If you found this project useful, consider giving it a **Star ⭐** on GitHub.
+⭐ **If you found this project helpful, consider giving it a Star on GitHub!**
