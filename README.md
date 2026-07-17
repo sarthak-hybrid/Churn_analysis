@@ -6,6 +6,7 @@ A data analytics project that analyzes customer churn patterns and provides acti
 
 ## 📌 Project Overview
 
+
 Customer churn directly impacts business growth and profitability. This project identifies the key reasons why customers leave a platform and provides strategic recommendations to reduce churn and improve customer retention.
 
 The analysis is performed on a **SQLite database (`customer_churn.db`)** containing customer information, subscription details, and customer support records.
