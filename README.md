@@ -31,6 +31,19 @@ Evaluate the Basic Plan: Investigate pricing, recent changes, or competitor adva
 .
 Targeted Retention: Collaborate with Growth/Marketing teams to prioritize retaining Premium users categorized as "High Risk," as they provide the most lifetime value
 .
+## 🛠️ Tech Stack
+
+- Python
+- SQL (MySQL)
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook
+
+---
+
 
 ## 🤝 Contributing
 
